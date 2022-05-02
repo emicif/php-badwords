@@ -13,24 +13,23 @@
         dopo aver sostituito con tre asterischi (***) tutte le occorrenze della parola da censurare.
  -->
 
- <h2>FRASE DA MODIFICARE</h2>
- <?php
+<h2>FRASE DA MODIFICARE</h2>
+<?php
    $variabileTesto = "Il primo programma con linguaggio PHP";
    echo($variabileTesto);
 ?>
 
-<h4>Il numero di caratteri della stringa è: </h4>
- <?php
+
+<h3>Il numero di caratteri della stringa è: </h3>
+<?php
    echo strlen($variabileTesto);
 ?>
 
+<hr>
 
-
-<h2>FRASE MODIFICATA</h2>
-
-
+<h3>Inserisci nel form una parola da censurare presente in "FRASE DA MODIFICARE"</h3>
 
 <form action="getfile.php" method="get">
-Text: <input type="text" name="text" placeholder ="Scrivi la parola da censurare"/>
+Scrivi una parola: <input type="text" name="text" placeholder ="Scrivi la parola da censurare"/>
 <input type="submit" />
 </form>
