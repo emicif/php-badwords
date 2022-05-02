@@ -10,3 +10,4 @@ La parola scelta dall'utente è <strong> <?php echo $_GET["text"]; ?></strong>
     $_GET["text"];
     echo str_replace(trim($_GET["text"]), "***", strtolower($variabileTesto));
 ?>
+
